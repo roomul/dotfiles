@@ -1,0 +1,17 @@
+alias ls="ls --color=auto"
+alias ll="ls -FG"
+
+if [ "$UID" = 0 ]; then
+	export PS1='\e[1;31m\u\e[0m \e[1;34m\w\e[0m \e[1;31m\$\e[0m '
+else
+	export PS1='\e[1;36m\u\e[0m \e[1;34m\w\e[0m \e[1;36m\$\e[0m '
+fi
+
+case "$TERM" in
+        xterm*|rxvt*)
+                PS1="\[\e]0;\u: \w\a\]$PS1" ;;
+        *)
+                ;;
+esac
+
+# End of file
