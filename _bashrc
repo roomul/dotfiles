@@ -1,5 +1,7 @@
 #
 
+shopt -s autocd
+
 alias ls="ls --color=auto"
 alias ll="ls -lFG"
 alias open="xdg-open"
