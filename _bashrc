@@ -14,15 +14,13 @@ print256colors(){
 
 git_prompt() {
   BRANCH=$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/*\(.*\)/\1/' -e 's/ //')
-	GIT_HASH=$(git log --branches --not --remotes 2>/dev/null | head -n1 | sed -e 's|commit ||g')
+  GIT_HASH=$(git log --branches --not --remotes 2>/dev/null | head -n1 | sed -e 's|commit ||g')
 
   if [ ! -z $BRANCH ]; then
-		echo -n -e "\e[1;36m${BRANCH}\e[0m"
-		
-		if [ ! -z $GIT_HASH ]; then
-			echo -n -e "\e[1;32m \u2794\e[0m"
-		fi
-
+    echo -n -e "\e[1;36m${BRANCH}\e[0m"
+    if [ ! -z $GIT_HASH ]; then
+      echo -n -e "\e[1;32m \u2794\e[0m"
+    fi
     if [ ! -z "$(git status --short)" ]; then
       echo -e "\e[1;31m \u2716 \e[0m"
     else
