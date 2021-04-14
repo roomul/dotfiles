@@ -46,5 +46,11 @@ git_prompt() {
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-PS1='\[\033[01;36m\]\w\[\033[00m\] $(git_prompt)\[\033[01;36m\]>\[\033[00m\] '
+export PS1='\[\033[01;36m\]\w\[\033[00m\] $(git_prompt)\[\033[01;36m\]>\[\033[00m\] '
 
+case "$TERM" in
+        xterm*|rxvt*)
+                PS1="\[\e]0;\u: \w\a\]$PS1" ;;
+        *)
+                ;;
+esac
