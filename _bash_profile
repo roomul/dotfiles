@@ -24,9 +24,10 @@ if [ -d "${DB_DIR}" ]; then
 fi
 
 ## exec startx without dm
-if shopt -q login_shell; then
-	[[ -t 0 && $(tty) == /dev/tty1 && ! $DISPLAY ]] && exec startx
-else
-	printf " :: ERROR: The startx in .bash_profile filed. \n"
-	exit 1
-fi
+#if shopt -q login_shell; then
+#	[[ -t 0 && $(tty) == /dev/tty1 && ! $DISPLAY ]] && exec startx
+#else
+#	printf " :: ERROR: The startx in .bash_profile filed. \n"
+#	exit 0
+#fi
+
