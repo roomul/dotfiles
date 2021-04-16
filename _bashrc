@@ -1,5 +1,7 @@
 #
 
+[[ $- != *i* ]] && return
+
 shopt -s autocd
 
 alias ls="ls --color=auto"
