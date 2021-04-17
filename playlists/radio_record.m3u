@@ -1,0 +1,40 @@
+#EXTM3U
+
+#EXTINF: Radio Record
+http://air.radiorecord.ru:805/rr_320
+
+#EXTINF: Radio Lo-Fi
+http://air.radiorecord.ru:805/lofi_320
+
+#EXTINF: Radio Trancemission
+http://air.radiorecord.ru:805/tm_320
+
+#EXTINF: Radio Pirate Station 
+http://air.radiorecord.ru:805/ps_320
+
+#EXTINF: Radio VIP
+http://air.radiorecord.ru:805/vip_320
+
+#EXTINF: Radio Toedor
+http://air.radiorecord.ru:805/teo_320
+
+#EXTINF: Radio Dance Core
+http://air.radiorecord.ru:805/dc_320
+
+#EXTINF: Radio ChillOut
+http://air.radiorecord.ru:805/chil_320
+
+#EXTINF: Radio Superdiscoteka 90s
+http://air.radiorecord.ru:805/sd90_320
+
+#EXTINF: Radio MedlyakFM
+http://air.radiorecord.ru:805/mdl_320
+
+#EXTINF: Radio GopFM
+http://air.radiorecord.ru:805/gop_320
+
+#EXTINF: Radio Russia Mix
+http://air.radiorecord.ru:805/rus_320
+
+#EXTINF: Radio Deep House
+http://air.radiorecord.ru:805/deep_320
