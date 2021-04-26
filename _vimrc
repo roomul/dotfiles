@@ -18,6 +18,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'tpope/vim-rails'
 	Plug 'flazz/vim-colorschemes'
+	Plug 'ap/vim-css-color'
 call plug#end()
 
 filetype indent on
@@ -25,7 +26,7 @@ filetype indent on
 syntax on
 
 set bg=dark
-color molokai
+color elflord
 
 " nerdtree
 nnoremap <C-n> :NERDTree<CR>
