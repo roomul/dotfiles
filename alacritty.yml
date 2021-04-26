@@ -1,0 +1,47 @@
+## Fonts
+
+font:
+  normal:
+    famaly: Liberation Mono
+    style: Regular
+
+  bold:
+    famaly: Liberation Mono
+    style: Bold
+
+  italic:
+    famaly: Liberation Mono
+    style: Italic
+
+  bold_italic:
+    famaly: Liberation Mono
+    style: Bold Italic
+
+  size: 10
+
+## Colors
+colors:
+  # default
+  primary:
+    background: '#282a36'
+    foreground: '#f8f8f2'
+  
+  # normal
+  normal:
+    black:      '#000000'
+    red:        '#ff5555'
+    green:      '#50fa7b'
+    yellow:     '#f1fa8c'
+    blue:       '#caa9fa'
+    magenta:    '#ff79c6'
+    cyan:       '#8be9fd'
+    white:      '#bfbfbf'
+
+## Cursor
+cursor:
+  style: Underline
+
+## Env
+
+env:
+  TERM: xterm-256color
