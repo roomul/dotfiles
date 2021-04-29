@@ -5,10 +5,15 @@ set t_Co=256
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
 
-set ls=2
+set statusline=2
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 set nobackup
 set noundofile
+
+set noshowmode
 
 filetype indent off
 
@@ -25,7 +30,7 @@ filetype indent on
 
 syntax on
 
-set bg=dark
+" set bg=dark
 color elflord
 
 " nerdtree
