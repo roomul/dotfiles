@@ -14,10 +14,6 @@ die(){
 
 main(){
 
-if [ "$UID" != "0" ]; then
-	die "You are nota root :("
-fi
-
 log "Prepare"
 
 if [ ! -d "/etc/iwd" ]; then
