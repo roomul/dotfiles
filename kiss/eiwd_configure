@@ -4,7 +4,7 @@ NAME="ASUS"
 PASS="04071979"
 
 log(){
-	printf " :: $1"
+	printf " :: $1\n"
 }
 
 die(){
@@ -28,7 +28,7 @@ EnableNetworkConfiguration true
 EOF
 
 log "Generate psk from - $NAME"
-
+install -dm755 /var/lib/iwd
 printf $PASS | iwd_passphrase $NAME > /var/lib/iwd/${NAME}.psk
 
 if [ -d "/etc/sv/eiwd" ]; then
