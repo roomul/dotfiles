@@ -36,7 +36,7 @@ fi
 
 umask 022
 
-zstyle ':completion:*' menu yes select
+zstyle ':completion:*' menu select
 
 # key bindings
 bindkey  "^[[H"   beginning-of-line # home key
@@ -85,17 +85,13 @@ git_prompt() {
     fi
 
     if [ ! -z "$(git status --short)" ]; then
-      echo -e " %B%F{red}\0xE2\0x9C\0x98"
+      echo " %B%F{red}\0xE2\0x9C\0x98"
     else
-      echo -e " %B%F{green}\0xE2\0x9C\0x94"    
+      echo " %B%F{green}\0xE2\0x9C\0x94"    
     fi
   fi
 }
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-#PROMPT="%{$fg_bold[blue]%}%~%{$reset_color%} %{$fg_bold[green]%}>%{$reset_color%} "
-#RPROMPT='$(git_prompt)%{$reset_color%}%F{reset}'
-
-PROMPT="%{$fg_bold[blue]%}%~%{$reset_color%} %{$fg_bold[blue]%}>%{$reset_color%} "
-RPROMPT='$(git_prompt)%{$reset_color%}%F{reset}'
+PROMPT='%{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt)%F{reset} %{$fg_bold[blue]%}>%{$reset_color%} '
