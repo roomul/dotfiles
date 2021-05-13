@@ -81,7 +81,7 @@ git_prompt() {
     echo -n -e "%B%F{cyan}$BRANCH"
 
     if [ ! -z $GIT_HASH ]; then
-	    echo -n -e "\e[1;32m \u2794\e[0m"
+	    echo -n -e "%B%F{red} \u2794"
     fi
 
     if [ ! -z "$(git status --short)" ]; then
